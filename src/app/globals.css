@@ -6,18 +6,22 @@
   --accent: #d2f24f;
   --primary: #99b81b;
   --muted: #c1c1c1;
-
 }
 
 @theme inline {
+  /* colors  */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
   --color-accent: var(--accent);
   --color-primary: var(--primary);
   --color-muted: var(--muted);
 
+  /* font  */
   --font-sans: var(--font-geist-sans), sans-serif;
+
+  /* breakpoints */
+  --breakpoint-xs: 320px;
+  --breakpoint-xs-max: 425px;
 }
 
 body {

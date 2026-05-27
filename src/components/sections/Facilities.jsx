@@ -144,13 +144,13 @@ const Facilities = () => {
               Recovery
             </h3>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-white text-black text-[13px] font-light px-3 py-1 rounded-full">
+              <span className="bg-primary text-white text-[13px] font-light px-3 py-1 rounded-full">
                 Spa
               </span>
-              <span className="bg-white text-black text-[13px] font-light px-3 py-1 rounded-full">
+              <span className="bg-primary text-white text-[13px] font-light px-3 py-1 rounded-full">
                 Pool
               </span>
-              <span className="bg-white text-black text-[13px] font-light px-3 py-1 rounded-full">
+              <span className="bg-primary text-white text-[13px] font-light px-3 py-1 rounded-full">
                 Massage
               </span>
             </div>

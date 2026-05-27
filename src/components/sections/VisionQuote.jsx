@@ -4,7 +4,7 @@ import bg1 from "../../assets/images/bg1.jpg";
 
 const VisionQuote = () => {
   return (
-    <section className="relative h-96 w-full overflow-hidden">
+    <section className="relative h-80 sm:h-96 w-full overflow-hidden">
       {/* Background Image */}
       <Image
         src={bg1}
@@ -19,23 +19,23 @@ const VisionQuote = () => {
         {/* Quote Block */}
         <div className="inline-flex flex-col items-start">
           {/* Quote */}
-          <blockquote className="text-center text-4xl font-semibold leading-tight">
+          <blockquote className="text-center xs-max:text-xl sm:text-2xl lg:text-4xl font-semibold leading-tight text-shadow-xs">
             “ We have created an environment ideal for
-            <br />
+            <br className="hidden sm:block"/>
             building craft. Our goal is to be recognized as the
-            <br />
+            <br className="hidden sm:block"/>{" "}
             best tennis performance centre in the world. ”
           </blockquote>
 
 
           {/* Border */}
-          <div className="mt-6 h-px w-full bg-white"></div>
+          <div className="mt-6 h-px w-full bg-white "></div>
 
           {/* Author */}
-          <div className="mt-6 flex flex-col items-start">
-            <span className="text-xl font-medium">John Doe</span>
+          <div className="mt-6 flex flex-col items-start text-shadow-xs">
+            <span className="sm:text-xl font-medium">John Doe</span>
 
-            <span className="mt-1 text-base text-white">Chairman</span>
+            <span className="mt-1 text-sm sm:text-base text-white">Chairman</span>
           </div>
         </div>
       </div>

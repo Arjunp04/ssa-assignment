@@ -20,7 +20,7 @@ const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <div className="flex justify-between items-center h-14 px-4 lg:px-10 bg-white xs:bg-red-500 xs-max:bg-blue-300 sm:bg-green-300 md:bg-yellow-400 lg:bg-violet-400 xl:bg-orange-400">
+    <div className="flex justify-between items-center h-14 px-4 lg:px-10 bg-white ">
       <Image
         src={logo}
         width={80}

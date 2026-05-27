@@ -21,8 +21,8 @@ export default function RootLayout({ children }) {
           {/* Navbar */}
           <Navbar />
           {/* Main Content */}
-          <main className="flex-1">{children}</main>
-          {/* Footer */}
+          <main className="flex-1 w-full max-w-380 mx-auto">{children}</main>
+          {/* Footer */} 
           <Footer />
         </div>
       </body>

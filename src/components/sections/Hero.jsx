@@ -3,7 +3,7 @@ import WeatherWidget from "./WeatherWidget";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden w-full h-screen">
+    <section className="relative overflow-hidden w-full h-150">
       {/* background video*/}
       <video
         autoPlay

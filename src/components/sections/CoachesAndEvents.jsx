@@ -23,7 +23,7 @@ const CoachesAndEvents = () => {
           <div className="absolute inset-0 bg-black/50 group-hover:bg-black/55 transition-colors duration-300" />
           
           {/* Content Box with Responsive Padding */}
-          <div className="absolute inset-0 flex flex-col justify-center px-6 xs:px-10 phone:px-16 pl-32 text-white">
+          <div className="absolute inset-0 flex flex-col justify-center px-6 xs:px-10 phone:px-16 lg:pl-32 text-white">
             <div className="flex items-start gap-1 mb-2 md:mb-3">
               <h3 className="text-2xl xs:text-3xl lg:text-4xl font-bold tracking-tight">Our Coaches</h3>
               <span className="size-2 bg-white rounded-full shrink-0"></span>
@@ -41,7 +41,7 @@ const CoachesAndEvents = () => {
         </div>
 
         {/* SECOND COLUMN (EVENTS) */}
-        <div className="relative w-full min-h-56 md:h-full bg-primary flex flex-col justify-center px-6 xs:px-10 phone:px-16 pl-32 text-white group cursor-pointer">
+        <div className="relative w-full min-h-56 md:h-full bg-primary flex flex-col justify-center px-6 xs:px-10 phone:px-16 lg:pl-32 text-white group cursor-pointer">
           <div className="absolute inset-0 opacity-10 bg-primary" />
           
           <div className="relative z-10">

@@ -6,7 +6,7 @@ import bg2 from "../../../assets/images/bg2.jpg";
 
 const FeaturesAndGallery = () => {
   return (
-    <section className="relative w-full h-300">
+    <section className="relative w-full h-250 md:h-220 lg:h-180">
       {/* Shared Asset Background Layer */}
       <Image
         src={bg2}
@@ -15,10 +15,7 @@ const FeaturesAndGallery = () => {
         priority
         className="object-cover pointer-events-none"
       />
-
-      {/* Renders block components sequentially */}
       <KeyFeatures />
-      <ExcellenceGallery />
     </section>
   );
 };

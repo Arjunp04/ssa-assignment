@@ -8,7 +8,7 @@ const SloganMarquee = () => {
   const repeatedPattern = [...baseWords, ...baseWords, ...baseWords, ...baseWords, ...baseWords, ...baseWords];
 
   return (
-    <div className="w-full overflow-hidden py-28">
+    <div className="w-full overflow-hidden py-16 sm:py-24">
       
       {/* Native ultra-smooth Left-to-Right layout animation engine */}
       <style dangerouslySetInnerHTML={{__html: `

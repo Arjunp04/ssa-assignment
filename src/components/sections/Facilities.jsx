@@ -9,32 +9,35 @@ import trophy from "../../assets/images/trophy.svg";
 
 const Facilities = () => {
   return (
-    <section className="w-full bg-white text-black py-10 px-32 relative">
-      <div className="mx-auto mb-12">
-        <div className="flex gap-1 items-start">
-          <h2 className="font-bold text-4xl text-black leading-none">
-            Facilities
-          </h2>
-          <span className="size-2 bg-primary rounded-full shrink-0 mt-1"></span>
-        </div>
-        <p className="font-light text-base text-[#555555] mt-4 max-w-xl">
+    <section className="w-full bg-white text-black py-10 px-6 md:px-12 lg:px-32 relative">
+      {/* Title Area */}
+      <div className="flex gap-1 items-start">
+        <p className="font-bold text-2xl xs:text-3xl sm:text-4xl text-black leading-none">
+          Facilities{" "}
+        </p>
+        <span className="size-2 bg-primary rounded-full shrink-0 mt-1"></span>
+      </div>
+
+      {/* Subtitle and Action Button Layout Row */}
+      <div className="flex flex-col xs-max:flex-row justify-between items-start sm:items-center gap-4 mt-4 sm:mt-5 mb-8 md:mb-12">
+        <p className="font-light text-sm sm:text-base leading-6 text-black">
           Lorem Ipsum has been the industry&apos;s standard dummy text ever
           since the 1500s.
         </p>
       </div>
 
-      <div className="absolute left-0 top-[350px] w-full h-[600px] z-0 bg-[linear-gradient(103.14deg,#002F50_11.16%,#99B81B_111.06%)] opacity-100">
+      <div className="absolute left-0 top-70 sm:top-88 w-full  h-230 sm:h-110 z-0 bg-[linear-gradient(103.14deg,#002F50_11.16%,#99B81B_111.06%)] opacity-100">
         <div className="absolute right-12 top-1/2 -translate-y-1/2 text-white/5 font-black text-[280px] pointer-events-none select-none">
           🏆
         </div>
       </div>
 
-      <div className="relative z-10 mx-auto flex flex-col gap-8">
+      <div className="relative z-10 mx-auto flex flex-col gap-8 ">
         {/* ROW 1: TENNIS & ACCOMMODATION */}
-        <div className="flex justify-start gap-10">
+        <div className="flex flex-col sm:flex-row justify-center sm:justify-start gap-10 w-full">
           {/* Box 1: Tennis Layout Section */}
-          <div className="flex flex-col group cursor-pointer">
-            <div className="relative h-96 w-96 overflow-hidden rounded-xl shadow-xl mb-6">
+          <div className="flex flex-col group cursor-pointer w-full xs-max:w-auto">
+            <div className="relative h-60 w-full overflow-hidden rounded-xl shadow-xl mb-6">
               <Image
                 src={facility1}
                 alt="60 Court multi-surface tennis facility stadium wireframe"
@@ -48,13 +51,18 @@ const Facilities = () => {
                 </button>
               </div>
             </div>
-            <h3 className="text-[28px] font-medium text-white mb-3">Tennis</h3>
+
+            <h3 className="text-2xl md:text-[28px] font-medium text-white mb-3">
+              Tennis
+            </h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-white text-black text-[13px] font-light px-3 py-1 rounded-full">
-                9 Clay Courts
+                {" "}
+                9 Clay Courts{" "}
               </span>
               <span className="bg-white text-black text-[13px] font-light px-3 py-1 rounded-full">
-                4 Hard Courts
+                {" "}
+                4 Hard Courts{" "}
               </span>
             </div>
             <p className="font-light text-[14px] leading-relaxed text-white max-w-sm">
@@ -64,8 +72,8 @@ const Facilities = () => {
           </div>
 
           {/* Box 2: Accommodation Layout Section */}
-          <div className="flex flex-col group cursor-pointer">
-            <div className="relative h-96 w-96 overflow-hidden rounded-xl shadow-xl mb-6">
+          <div className="flex flex-col group cursor-pointer w-full xs-max:w-auto">
+            <div className="relative h-60 w-full overflow-hidden rounded-xl shadow-xl mb-6">
               <Image
                 src={facility2}
                 alt="5 Star Luxury Hunter Valley resort bedroom suites"
@@ -78,12 +86,15 @@ const Facilities = () => {
                 </button>
               </div>
             </div>
-            <h3 className="text-[28px] font-medium text-white mb-3">
-              Accommodation
+
+            <h3 className="text-2xl md:text-[28px] font-medium text-white mb-3">
+              {" "}
+              Accommodation{" "}
             </h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-white text-black text-[13px] font-light px-3 py-1 rounded-full">
-                5 Star Hotel
+                {" "}
+                5 Star Hotel{" "}
               </span>
             </div>
             <p className="font-light text-[14px] leading-relaxed text-white max-w-sm">
@@ -93,11 +104,11 @@ const Facilities = () => {
           </div>
         </div>
 
-        {/* ROW 2: FITNESS & RECOVERY (Staggered to descend below the gradient sheet fold) */}
-        <div className="flex justify-end gap-10 mt-6">
+        {/* ROW 2: FITNESS & RECOVERY */}
+        <div className="flex flex-col sm:flex-row justify-center sm:justify-end gap-10 w-full mt-6">
           {/* Box 3: Fitness Layout Section */}
-          <div className="flex flex-col group cursor-pointer">
-            <div className="relative h-96 w-96 overflow-hidden rounded-xl shadow-xl mb-6">
+          <div className="flex flex-col group cursor-pointer w-full xs-max:w-auto">
+            <div className="relative h-60 w-full overflow-hidden rounded-xl shadow-xl mb-6">
               <Image
                 src={facility3}
                 alt="Professional athletic performance gym center machinery training deck"
@@ -110,13 +121,18 @@ const Facilities = () => {
                 </button>
               </div>
             </div>
-            <h3 className="text-[28px] font-medium text-black mb-3">Fitness</h3>
+
+            <h3 className="text-2xl md:text-[28px] font-medium text-black mb-3">
+              Fitness
+            </h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-primary text-white text-[13px] font-light px-3 py-1 rounded-full">
-                Gym
+                {" "}
+                Gym{" "}
               </span>
               <span className="bg-primary text-white text-[13px] font-light px-3 py-1 rounded-full">
-                Outdoor Layout
+                {" "}
+                Outdoor Layout{" "}
               </span>
             </div>
             <p className="font-light text-[14px] leading-relaxed text-black max-w-sm">
@@ -126,8 +142,8 @@ const Facilities = () => {
           </div>
 
           {/* Box 4: Recovery Layout Section */}
-          <div className="flex flex-col group cursor-pointer">
-            <div className="relative h-96 w-96 overflow-hidden rounded-xl shadow-xl mb-6">
+          <div className="flex flex-col group cursor-pointer w-full xs-max:w-auto">
+            <div className="relative h-60 w-full overflow-hidden rounded-xl shadow-xl mb-6">
               <Image
                 src={facility4}
                 alt="Hydrotherapy pool recovery spa deck resort station"
@@ -136,22 +152,27 @@ const Facilities = () => {
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-colors">
                 <button className="size-12 rounded-full bg-white text-black flex items-center justify-center pl-1 shadow-lg hover:scale-110 transition-transform">
-                  <FaPlay className="text-sm text-gray-800" />
+                  <FaPlay className="text-lg text-gray-800" />
                 </button>
               </div>
             </div>
-            <h3 className="text-[28px] font-medium text-black mb-3">
-              Recovery
+
+            <h3 className="text-2xl md:text-[28px] font-medium text-black mb-3">
+              {" "}
+              Recovery{" "}
             </h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-primary text-white text-[13px] font-light px-3 py-1 rounded-full">
-                Spa
+                {" "}
+                Spa{" "}
               </span>
               <span className="bg-primary text-white text-[13px] font-light px-3 py-1 rounded-full">
-                Pool
+                {" "}
+                Pool{" "}
               </span>
               <span className="bg-primary text-white text-[13px] font-light px-3 py-1 rounded-full">
-                Massage
+                {" "}
+                Massage{" "}
               </span>
             </div>
             <p className="font-light text-[14px] leading-relaxed text-black max-w-sm">

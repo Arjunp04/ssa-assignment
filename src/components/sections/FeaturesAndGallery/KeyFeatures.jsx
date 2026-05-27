@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -13,33 +12,33 @@ const KeyFeatures = () => {
   ];
 
   return (
-    <section className=" w-full overflow-hidden">
+    <section className="absolute w-full overflow-hidden">
     
       {/* Overlay Content */}
-      <div className="relative z-10 py-32 px-32 text-black">
+      <div className="relative z-10 py-24 md:pt-32 px-6 md:px-12 lg:px-32 text-black ">
         <div className="flex gap-1 items-start">
-          <p className="font-bold text-4xl text-black leading-none">
+          <p className="font-bold text-3xl sm:text-4xl text-black leading-none">
             Key Features
           </p>
           <span className="size-2 bg-primary rounded-full shrink-0"></span>
         </div>
-        <div className="flex justify-between items-center mt-5">
-          <p className="font-light text-base leading-6 text-black">
+        <div className="flex justify-between items-start sm:items-center gap-6 mt-5">
+          <p className="font-light text-sm sm:text-base leading-6 text-black">
             Lorem Ipsum has been the industry&apos;s standard dummy text ever
             since the 1500s.
           </p>
-          <button className="border border-primary rounded-4xl text-[13px] px-4 py-1.5 cursor-pointer transition-all duration-300 ease-in-out bg-primary text-white hover:bg-transparent hover:text-primary">
+          <button className="border border-primary rounded-4xl text-xs sm:text-[13px] px-4 py-1.5 cursor-pointer transition-all duration-300 ease-in-out bg-primary text-white hover:bg-transparent hover:text-primary text-nowrap">
             Register now
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 md:gap-12 lg:gap-16 mt-6 md:mt-10">
           {/* Left Side Features List */}
-          <ul className="flex flex-col gap-5">
+          <ul className="flex flex-col gap-3.5 sm:gap-5">
             {features.map((item, index) => (
               <li
                 key={`left-${index}`}
-                className="flex items-start gap-3 text-base leading-6 text-black font-light"
+                className="flex items-start gap-3 text-sm sm:text-base leading-6 text-black font-light"
               >
                 <FaArrowRightLong className="shrink-0 mt-1 text-primary" />
                 <span>{item}</span>
@@ -48,11 +47,11 @@ const KeyFeatures = () => {
           </ul>
 
           {/* Right Side Features List */}
-          <ul className="flex flex-col gap-5">
+          <ul className="flex flex-col gap-3.5 sm:gap-5">
             {features.map((item, index) => (
               <li
                 key={`right-${index}`}
-                className="flex items-start gap-3 text-base leading-6 text-black font-light"
+                className="flex items-start gap-3 text-sm sm:text-base leading-6 text-black font-light"
               >
                 <FaArrowRightLong className="shrink-0 mt-1 text-primary" />
                 <span>{item}</span>

@@ -8,6 +8,7 @@ import ConnectivityLaunch from "@/components/sections/ConnectivityLaunch";
 import MeetProfessionals from "@/components/sections/MeetProfessionals";
 import CoachesAndEvents from "@/components/sections/CoachesAndEvents";
 import Facilities from "@/components/sections/Facilities";
+import ExcellenceGallery from "@/components/sections/FeaturesAndGallery/ExcellenceGallery";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutSummary />
       <VisionQuote />
       <FeaturesAndGallery />
+      <ExcellenceGallery />
       <Programs />
       <SloganMarquee />
       <ConnectivityLaunch />

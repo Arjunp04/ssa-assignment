@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Signature Slam Academy (SSA) - Responsive Landing Page
 
-## Getting Started
+A fully responsive Single Page Application (SPA) landing page for the Signature Slam Academy (SSA) Hunter Valley, engineered using **Next.js** and the latest **Tailwind CSS v4** framework.
 
-First, run the development server:
+## 🔗 Live Deployment
+* **Live Demo URL:** https://ssa-assignment.vercel.app/
 
+## 🛠️ Tech Stack
+* **Framework:** Next.js (App Router Architecture)
+* **Styling:** Tailwind CSS v4 (CSS-First Theme Configured)
+* **Icons:** React Icons
+* **Deployment:** Vercel Edge Network
+
+## 📱 Device Responsiveness
+The landing page uses a mobile-first approach and is fully responsive across all device sizes:
+* **Mobile (< 640px):** Single-column stacked layouts, hidden desktop menus, and an animated sidebar drawer. Includes specific styling for ultra-small screens (`xs: 320px` and `xs-max: 425px`).
+* **Tablet (640px - 1024px):** Dual-column grids for card layouts and section components.
+* **Desktop (> 1024px):** Multi-column grid spacing, full navigation bars, and a max-width layout container (`1440px`) to prevent design stretching on huge monitors.
+
+## 💻 Getting Started (Local Development)
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Arjunp04/ssa-assignment.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Run the local development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Build the production optimization bundle:
+```bash
+npm run build
+npm run start
+```

@@ -51,6 +51,7 @@ const Navbar = () => {
       <button
         onClick={() => setShowSidebar(true)}
         className="lg:hidden cursor-pointer p-1"
+        aria-label="Open navigation menu"
       >
         <GiHamburgerMenu size={24} />
       </button>
@@ -87,6 +88,7 @@ const Navbar = () => {
             <button
               onClick={() => setShowSidebar(false)}
               className="p-1 cursor-pointer text-black hover:text-red-500 transition-colors duration-200"
+              aria-label="Close navigation menu"
             >
               <IoMdClose size={26} />
             </button>

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import bg2 from "../../../assets/images/bg2.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
-import ExcellenceGallery from "./ExcellenceGallery";
 
 const KeyFeatures = () => {
   const features = [
@@ -16,15 +14,7 @@ const KeyFeatures = () => {
 
   return (
     <section className=" w-full overflow-hidden">
-      {/* Background Image */}
-      {/* <Image
-        src={bg2}
-        alt="background"
-        fill
-        priority
-        className="object-cover pointer-events-none"
-      /> */}
-
+    
       {/* Overlay Content */}
       <div className="relative z-10 py-32 px-32 text-black">
         <div className="flex gap-1 items-start">
@@ -72,7 +62,6 @@ const KeyFeatures = () => {
         </div>
       </div>
 
-      {/* <ExcellenceGallery /> */}
     </section>
   );
 };

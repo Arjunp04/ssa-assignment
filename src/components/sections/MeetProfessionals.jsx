@@ -17,14 +17,14 @@ const MeetProfessionals = () => {
       id: 2,
       image: p2,
       name: "Stephen Farrow",
-      role: "Director - Tournament, Players & International Relations",
+      role: "Director - Tournament, Players &\n International Relations",
       alt: "Stephen Farrow - Director",
     },
     {
       id: 3,
       image: p3,
       name: "Cameron Pearson",
-      role: "Head of Major Events -\nTennis Australia",
+      role: "Head of Major Events - Tennis Australia",
       alt: "Cameron Pearson - Head of Major Events",
     },
   ];

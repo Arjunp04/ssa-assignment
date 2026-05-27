@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
 
         {/* Adopt • Nurture • Deliver */}
-        <div className="uppercase text-lg tracking-[0.285em] text-white drop-shadow-lg bg-gradient-to-r from-[#CDED4E]/0 via-[#d2f24f] to-[#d2f24f]/0 via-[50.62%] from-[3.45%] to-[91.38%] flex items-center justify-center gap-6 my-8 w-2xl">
+        <div className="uppercase text-lg tracking-[0.285em] text-white drop-shadow-lg bg-linear-to-r from-[#CDED4E]/0 via-[#d2f24f] to-[#d2f24f]/0 via-[50.62%] from-[3.45%] to-[91.38%] flex items-center justify-center gap-6 my-8 w-2xl">
           <span>adopt</span>
           {/* First 8px Circle */}
           <span className="size-2 bg-white rounded-full shrink-0" />

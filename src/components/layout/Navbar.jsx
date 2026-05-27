@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import logo from "../../assets/images/logo.svg";
 
 const Navbar = () => {
   const navLinks = [
@@ -16,27 +17,27 @@ const Navbar = () => {
   return (
     <div className=" flex justify-between items-center h-14 px-10">
       <Image
-        src="/icon.svg"
-        width={50}
-        height={40}
+        src={logo}
+        width={80}
+        height={80}
         alt="Logo"
         priority
-        className="w-auto h-auto" // Tells CSS to preserve the SVG aspect ratio
+        className="object-contain" // Tells CSS to preserve the SVG aspect ratio
       />
 
-      <div className="flex items-center gap-7 text-sm text-primary font-normal">
+      <div className="flex items-center gap-7 text-sm text-black font-normal">
         {navLinks.map((navItem) => (
           <p
             key={navItem}
-            className="cursor-pointer transition-colors duration-300 ease-in-out hover:text-black"
+            className="cursor-pointer transition-colors duration-300 ease-in-out hover:text-primary"
           >
             {navItem}
           </p>
         ))}
       </div>
-      <button className="border border-accent rounded-4xl text-xs font-medium px-4 py-1.5 cursor-pointer transition-all duration-300 ease-in-out bg-accent text-black">
-        Contact Us
-      </button>
+      <button className="border border-primary rounded-4xl text-[13px] px-4 py-1.5 cursor-pointer transition-all duration-300 ease-in-out bg-primary text-white hover:bg-transparent hover:text-primary">
+            Contact Us
+          </button>
     </div>
   );
 };
